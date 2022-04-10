@@ -14,13 +14,13 @@ public class Task13 {
     }
 
     public static HashMap<Integer, Abonent> createAbonents() {
-        HashMap<Integer, Abonent> books = new HashMap<>();
-        books.put(111, new Abonent("Nikolay", "Zahi", "Stepanovich", "Union Avenue 33"));
-        books.put(222, new Abonent("Vitaliy", "Dou", "Nikolayovich", "New Kensington 15"));
-        books.put(333, new Abonent("Pavlo", "Akirov", "Igorevich", "Nampa 19"));
-        books.put(444, new Abonent("Stepan", "Baia", "Vitaliyovich", "Fairhope 55"));
-        books.put(555, new Abonent("Igor", "Cayman", "Pavlovich", "Spartanburg 2"));
-        return books;
+        HashMap<Integer, Abonent> abonents = new HashMap<>();
+        abonents.put(111, new Abonent("Nikolay", "Zahi", "Stepanovich", "Union Avenue 33"));
+        abonents.put(222, new Abonent("Vitaliy", "Dou", "Nikolayovich", "New Kensington 15"));
+        abonents.put(333, new Abonent("Pavlo", "Akirov", "Igorevich", "Nampa 19"));
+        abonents.put(444, new Abonent("Stepan", "Baia", "Vitaliyovich", "Fairhope 55"));
+        abonents.put(555, new Abonent("Igor", "Cayman", "Pavlovich", "Spartanburg 2"));
+        return abonents;
     }
 
     public static void runCommands(List<String> commands, HashMap<Integer, Abonent> abonents) {
