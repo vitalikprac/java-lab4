@@ -29,7 +29,7 @@ public class Task17Test {
 
     @Test
     public void printHashMapBooks() {
-        Task17.execute(new String[]{"task5", "print"});
+        Task17.execute(new String[]{"task17", "print"});
         Assert.assertEquals("""
                 [TASK17] HashMap Books:\r
                 [TASK17] {131} Book{name='Book 3', authorFullName='Dou Mariana', publication='Prachov', publicationYear=2003, price=50.0}\r
@@ -43,7 +43,7 @@ public class Task17Test {
 
     @Test
     public void sortByName() {
-        Task17.execute(new String[]{"task5", "print", "sort", "name"});
+        Task17.execute(new String[]{"task17", "print", "sort", "name"});
         Assert.assertEquals("""
                 [TASK17] HashMap Books:\r
                 [TASK17] {131} Book{name='Book 3', authorFullName='Dou Mariana', publication='Prachov', publicationYear=2003, price=50.0}\r
@@ -63,7 +63,7 @@ public class Task17Test {
 
     @Test
     public void sortByPublicationYear() {
-        Task17.execute(new String[]{"task5", "print", "sort", "publicationYear"});
+        Task17.execute(new String[]{"task17", "print", "sort", "publicationYear"});
         Assert.assertEquals("""
                 [TASK17] HashMap Books:\r
                 [TASK17] {131} Book{name='Book 3', authorFullName='Dou Mariana', publication='Prachov', publicationYear=2003, price=50.0}\r
@@ -83,7 +83,7 @@ public class Task17Test {
 
     @Test
     public void sortByPrice() {
-        Task17.execute(new String[]{"task5", "print", "sort", "price"});
+        Task17.execute(new String[]{"task17", "print", "sort", "price"});
         Assert.assertEquals("""
                 [TASK17] HashMap Books:\r
                 [TASK17] {131} Book{name='Book 3', authorFullName='Dou Mariana', publication='Prachov', publicationYear=2003, price=50.0}\r
@@ -103,7 +103,7 @@ public class Task17Test {
 
     @Test
     public void checkIfBookWithNameBook3Exist() {
-        Task17.execute(new String[]{"task5", "print", "unique", "Book", "3", "stop"});
+        Task17.execute(new String[]{"task17", "print", "unique", "Book", "3", "stop"});
         Assert.assertEquals("""
                 [TASK17] HashMap Books:\r
                 [TASK17] {131} Book{name='Book 3', authorFullName='Dou Mariana', publication='Prachov', publicationYear=2003, price=50.0}\r
@@ -117,7 +117,7 @@ public class Task17Test {
 
     @Test
     public void checkIfBookWithNameBook6NotExist() {
-        Task17.execute(new String[]{"task5", "print", "unique", "Book", "6", "stop"});
+        Task17.execute(new String[]{"task17", "print", "unique", "Book", "6", "stop"});
         Assert.assertEquals("""
                 [TASK17] HashMap Books:\r
                 [TASK17] {131} Book{name='Book 3', authorFullName='Dou Mariana', publication='Prachov', publicationYear=2003, price=50.0}\r
