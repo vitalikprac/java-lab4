@@ -1,34 +1,39 @@
-# Лабораторна робота - 3
+# Лабораторна робота - 4
 Прачов Віталій ТМ-82. Варіант - 16.
 
 # Start
 Using Maven you can provide execution arguments for running specific task
-Available tasks: `task5`,`task13`,`task25`,`task31`
+Available tasks: `task5`,`task13`,`task17`,`task25`
 
 To running `task5`:
- - `3` - is encrypt key
- - `Hello world!` - is text to encrypt
+ - `print` - print all books
+ - `delete {number}` - delete book with number
+ - `sort {field}` - sort books by field (`name`,`authorFullName`,`publication`,`publicationYear`,`price`)
 ```bash
-$ mvn package exec:java --quiet -DskipTests "-Dexec.args=task5 3 Hello world!"
+$ mvn package exec:java --quiet -DskipTests "-Dexec.args=task5 print delete 3 print"
 ```
 
 To running `task13`:
-- `azwybtmjnlurkhicvodsfegqpx` - is encrypt key
-- `Text to crypt!` - is text to encrypt
+- `print` - print all abonents
+- `find {name}` - find abonent by name
+- `change {name} {surname} {lastName} {address} stop` - change last founded abonent 
 ```bash
-$ mvn package exec:java --quiet -DskipTests "-Dexec.args=task13 azwybtmjnlurkhicvodsfegqpx Text to crypt!"
+$ mvn package exec:java --quiet -DskipTests "-Dexec.args=task13 print find Vitaliy change Vitaliy Prachov Serhiyovich Academic Yanhelya 5 stop print"
+```
+
+To running `task17`:
+- `print` - print all books
+- `sort {field}` - sort by field 
+- `unique ${book name} stop` - check if book is unique by TreeSet
+```bash
+$ mvn package exec:java --quiet -DskipTests "-Dexec.args=task17 print unique Book 6 stop""
 ```
 
 To running `task25`:
-- `text test asd123 f agdfgsdfg2 ax` - is just text with arguments
+- `print` - print all articles
+- `delete {number}` - delete article with number
 ```bash
-$ mvn package exec:java --quiet -DskipTests "-Dexec.args=task25 text test asd123 f agdfgsdfg2 a"
-```
-
-To running `task31`:
-- `z e a f b d123 c` - is just text with arguments
-```bash
-$ mvn package exec:java --quiet -DskipTests "-Dexec.args=task31 z e a f b d123 c"
+$ mvn package exec:java --quiet -DskipTests "-Dexec.args=task25 print delete 152 delete 131 print"
 ```
 
 
